@@ -19,7 +19,32 @@ namespace CSC240_06_03_CarDealer_bpc
 
         private void UxAcuraNSXCheck_CheckedChanged(object sender, EventArgs e)
         {
+            if (UxAcuraNSXCheck.Checked)
+            {
+                AcuraNSX acuraNSX = new AcuraNSX();
+                acuraNSX.ShowDialog();
+                UxAcuraNSXCheck.Checked = false;
+            }
+        }
 
+        private void UxCyberTruckCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (UxCyberTruckCheck.Checked)
+            {
+                CyberTruck cybertruck = new CyberTruck();
+                cybertruck.ShowDialog();
+                UxCyberTruckCheck.Checked = false;
+            }
+        }
+
+        private void UxCorvetteCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (UxCorvetteCheck.Checked)
+            {
+                Corvette corvette = new Corvette();
+                corvette.ShowDialog();
+                UxCorvetteCheck.Checked = false;
+            }
         }
     }
 }
