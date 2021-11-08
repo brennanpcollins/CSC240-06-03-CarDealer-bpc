@@ -82,6 +82,7 @@ namespace CSC240_06_03_CarDealer_bpc
             this.UxCyberTruckCheck.TabIndex = 3;
             this.UxCyberTruckCheck.Text = "2022 Tesla Cybertruck";
             this.UxCyberTruckCheck.UseVisualStyleBackColor = true;
+            this.UxCyberTruckCheck.CheckedChanged += new System.EventHandler(this.UxCyberTruckCheck_CheckedChanged);
             // 
             // UxCorvetteCheck
             // 
@@ -94,6 +95,7 @@ namespace CSC240_06_03_CarDealer_bpc
             this.UxCorvetteCheck.TabIndex = 4;
             this.UxCorvetteCheck.Text = "2021 Chevrolet Corvette";
             this.UxCorvetteCheck.UseVisualStyleBackColor = true;
+            this.UxCorvetteCheck.CheckedChanged += new System.EventHandler(this.UxCorvetteCheck_CheckedChanged);
             // 
             // Form1
             // 
