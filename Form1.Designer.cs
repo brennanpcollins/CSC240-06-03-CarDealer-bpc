@@ -29,24 +29,83 @@ namespace CSC240_06_03_CarDealer_bpc
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.UxCarDealerLabel = new System.Windows.Forms.Label();
+            this.UxSecondLabel = new System.Windows.Forms.Label();
+            this.UxAcuraNSXCheck = new System.Windows.Forms.CheckBox();
+            this.UxCyberTruckCheck = new System.Windows.Forms.CheckBox();
+            this.UxCorvetteCheck = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // label1
+            // UxCarDealerLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(344, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.UxCarDealerLabel.AutoSize = true;
+            this.UxCarDealerLabel.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UxCarDealerLabel.ForeColor = System.Drawing.Color.MistyRose;
+            this.UxCarDealerLabel.Location = new System.Drawing.Point(241, 79);
+            this.UxCarDealerLabel.Name = "UxCarDealerLabel";
+            this.UxCarDealerLabel.Size = new System.Drawing.Size(857, 74);
+            this.UxCarDealerLabel.TabIndex = 0;
+            this.UxCarDealerLabel.Text = "Brennan\'s Car Dealership";
+            // 
+            // UxSecondLabel
+            // 
+            this.UxSecondLabel.AutoSize = true;
+            this.UxSecondLabel.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UxSecondLabel.ForeColor = System.Drawing.Color.MistyRose;
+            this.UxSecondLabel.Location = new System.Drawing.Point(272, 186);
+            this.UxSecondLabel.Name = "UxSecondLabel";
+            this.UxSecondLabel.Size = new System.Drawing.Size(772, 55);
+            this.UxSecondLabel.TabIndex = 1;
+            this.UxSecondLabel.Text = "Pick from our selected models!";
+            // 
+            // UxAcuraNSXCheck
+            // 
+            this.UxAcuraNSXCheck.AutoSize = true;
+            this.UxAcuraNSXCheck.Font = new System.Drawing.Font("Forte", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.UxAcuraNSXCheck.ForeColor = System.Drawing.Color.SteelBlue;
+            this.UxAcuraNSXCheck.Location = new System.Drawing.Point(272, 349);
+            this.UxAcuraNSXCheck.Name = "UxAcuraNSXCheck";
+            this.UxAcuraNSXCheck.Size = new System.Drawing.Size(384, 56);
+            this.UxAcuraNSXCheck.TabIndex = 2;
+            this.UxAcuraNSXCheck.Text = "2021 Acura NSX";
+            this.UxAcuraNSXCheck.UseVisualStyleBackColor = true;
+            this.UxAcuraNSXCheck.CheckedChanged += new System.EventHandler(this.UxAcuraNSXCheck_CheckedChanged);
+            // 
+            // UxCyberTruckCheck
+            // 
+            this.UxCyberTruckCheck.AutoSize = true;
+            this.UxCyberTruckCheck.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UxCyberTruckCheck.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.UxCyberTruckCheck.Location = new System.Drawing.Point(272, 444);
+            this.UxCyberTruckCheck.Name = "UxCyberTruckCheck";
+            this.UxCyberTruckCheck.Size = new System.Drawing.Size(541, 58);
+            this.UxCyberTruckCheck.TabIndex = 3;
+            this.UxCyberTruckCheck.Text = "2022 Tesla Cybertruck";
+            this.UxCyberTruckCheck.UseVisualStyleBackColor = true;
+            // 
+            // UxCorvetteCheck
+            // 
+            this.UxCorvetteCheck.AutoSize = true;
+            this.UxCorvetteCheck.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.UxCorvetteCheck.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.UxCorvetteCheck.Location = new System.Drawing.Point(272, 540);
+            this.UxCorvetteCheck.Name = "UxCorvetteCheck";
+            this.UxCorvetteCheck.Size = new System.Drawing.Size(494, 65);
+            this.UxCorvetteCheck.TabIndex = 4;
+            this.UxCorvetteCheck.Text = "2021 Chevrolet Corvette";
+            this.UxCorvetteCheck.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ClientSize = new System.Drawing.Size(1315, 876);
+            this.Controls.Add(this.UxCorvetteCheck);
+            this.Controls.Add(this.UxCyberTruckCheck);
+            this.Controls.Add(this.UxAcuraNSXCheck);
+            this.Controls.Add(this.UxSecondLabel);
+            this.Controls.Add(this.UxCarDealerLabel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -56,7 +115,11 @@ namespace CSC240_06_03_CarDealer_bpc
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label UxCarDealerLabel;
+        private System.Windows.Forms.Label UxSecondLabel;
+        private System.Windows.Forms.CheckBox UxAcuraNSXCheck;
+        private System.Windows.Forms.CheckBox UxCyberTruckCheck;
+        private System.Windows.Forms.CheckBox UxCorvetteCheck;
     }
 }
 

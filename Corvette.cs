@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CSC240_06_03_CarDealer_bpc
 {
-    public partial class Form1 : Form
+    public partial class Corvette : Form
     {
-        public Form1()
+        public Corvette()
         {
             InitializeComponent();
-        }
-
-        private void UxAcuraNSXCheck_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
