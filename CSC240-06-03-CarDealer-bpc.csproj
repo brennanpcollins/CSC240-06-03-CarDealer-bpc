@@ -3,9 +3,9 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <RootNamespace>CSC240_06_03_ImproveCarDealer_bpc</RootNamespace>
+    <RootNamespace>CSC240_06_03_CarDealer_bpc</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyName>CSC240-06-03-ImprovedCarDealer-bpc</AssemblyName>
+    <AssemblyName>CSC240-06-03-CarDealer-bpc</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
