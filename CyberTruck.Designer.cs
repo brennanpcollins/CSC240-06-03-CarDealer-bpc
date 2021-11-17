@@ -33,6 +33,7 @@ namespace CSC240_06_03_CarDealer_bpc
             this.UxCyberTruckTitleLabel = new System.Windows.Forms.Label();
             this.UxTeslaCyberPicture = new System.Windows.Forms.PictureBox();
             this.UxTeslaTruckDetailsLabel = new System.Windows.Forms.Label();
+            this.UxCyberTruckDetailButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.UxTeslaCyberPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,9 +51,9 @@ namespace CSC240_06_03_CarDealer_bpc
             // UxTeslaCyberPicture
             // 
             this.UxTeslaCyberPicture.Image = ((System.Drawing.Image)(resources.GetObject("UxTeslaCyberPicture.Image")));
-            this.UxTeslaCyberPicture.Location = new System.Drawing.Point(55, 408);
+            this.UxTeslaCyberPicture.Location = new System.Drawing.Point(0, 602);
             this.UxTeslaCyberPicture.Name = "UxTeslaCyberPicture";
-            this.UxTeslaCyberPicture.Size = new System.Drawing.Size(491, 345);
+            this.UxTeslaCyberPicture.Size = new System.Drawing.Size(688, 454);
             this.UxTeslaCyberPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UxTeslaCyberPicture.TabIndex = 1;
             this.UxTeslaCyberPicture.TabStop = false;
@@ -61,21 +62,33 @@ namespace CSC240_06_03_CarDealer_bpc
             // 
             this.UxTeslaTruckDetailsLabel.AutoSize = true;
             this.UxTeslaTruckDetailsLabel.BackColor = System.Drawing.Color.Transparent;
-            this.UxTeslaTruckDetailsLabel.Font = new System.Drawing.Font("Bauhaus 93", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UxTeslaTruckDetailsLabel.Font = new System.Drawing.Font("Bauhaus 93", 25.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UxTeslaTruckDetailsLabel.ForeColor = System.Drawing.Color.Coral;
-            this.UxTeslaTruckDetailsLabel.Location = new System.Drawing.Point(551, 282);
+            this.UxTeslaTruckDetailsLabel.Location = new System.Drawing.Point(261, 266);
             this.UxTeslaTruckDetailsLabel.Name = "UxTeslaTruckDetailsLabel";
-            this.UxTeslaTruckDetailsLabel.Size = new System.Drawing.Size(760, 343);
+            this.UxTeslaTruckDetailsLabel.Size = new System.Drawing.Size(1106, 78);
             this.UxTeslaTruckDetailsLabel.TabIndex = 2;
-            this.UxTeslaTruckDetailsLabel.Text = "Price: $39,900 (pre-customization)\r\n\r\n\r\n\r\nThis is new implementation to the\r\nworl" +
-    "d of Tesla\'s electrical automation!\r\nPre-order now!";
+            this.UxTeslaTruckDetailsLabel.Text = "Price: $39,900 (pre-customization)\r\n";
+            // 
+            // UxCyberTruckDetailButton
+            // 
+            this.UxCyberTruckDetailButton.BackColor = System.Drawing.Color.White;
+            this.UxCyberTruckDetailButton.Font = new System.Drawing.Font("Bauhaus 93", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UxCyberTruckDetailButton.Location = new System.Drawing.Point(0, 581);
+            this.UxCyberTruckDetailButton.Name = "UxCyberTruckDetailButton";
+            this.UxCyberTruckDetailButton.Size = new System.Drawing.Size(688, 97);
+            this.UxCyberTruckDetailButton.TabIndex = 3;
+            this.UxCyberTruckDetailButton.Text = "Click here for info.";
+            this.UxCyberTruckDetailButton.UseVisualStyleBackColor = false;
+            this.UxCyberTruckDetailButton.Click += new System.EventHandler(this.UxCyberTruckDetailButton_Click);
             // 
             // CyberTruck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1323, 876);
+            this.ClientSize = new System.Drawing.Size(1420, 1057);
+            this.Controls.Add(this.UxCyberTruckDetailButton);
             this.Controls.Add(this.UxTeslaTruckDetailsLabel);
             this.Controls.Add(this.UxTeslaCyberPicture);
             this.Controls.Add(this.UxCyberTruckTitleLabel);
@@ -92,5 +105,6 @@ namespace CSC240_06_03_CarDealer_bpc
         private System.Windows.Forms.Label UxCyberTruckTitleLabel;
         private System.Windows.Forms.PictureBox UxTeslaCyberPicture;
         private System.Windows.Forms.Label UxTeslaTruckDetailsLabel;
+        private System.Windows.Forms.Button UxCyberTruckDetailButton;
     }
 }

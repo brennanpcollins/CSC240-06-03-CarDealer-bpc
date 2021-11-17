@@ -3,8 +3,9 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <RootNamespace>CSC240_06_03_CarDealer_bpc</RootNamespace>
+    <RootNamespace>CSC240_06_03_ImproveCarDealer_bpc</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>CSC240-06-03-ImprovedCarDealer-bpc</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>
