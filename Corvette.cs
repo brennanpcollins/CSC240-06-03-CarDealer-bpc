@@ -16,5 +16,11 @@ namespace CSC240_06_03_CarDealer_bpc
         {
             InitializeComponent();
         }
+
+        private void UxCorvetteInfoButton_Click(object sender, EventArgs e)
+        {
+            CorvetteDetails corvettedetails = new CorvetteDetails();
+            corvettedetails.ShowDialog();
+        }
     }
 }

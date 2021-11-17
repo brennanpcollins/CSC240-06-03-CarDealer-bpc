@@ -46,5 +46,16 @@ namespace CSC240_06_03_CarDealer_bpc
                 UxCorvetteCheck.Checked = false;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UxHelpButton_Click(object sender, EventArgs e)
+        {
+            HelpScreen helpscreen = new HelpScreen();
+            helpscreen.ShowDialog();
+        }
     }
 }

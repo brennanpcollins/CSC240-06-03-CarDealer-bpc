@@ -16,5 +16,11 @@ namespace CSC240_06_03_CarDealer_bpc
         {
             InitializeComponent();
         }
+
+        private void UxCyberTruckDetailButton_Click(object sender, EventArgs e)
+        {
+            CyberTruckDetails cybertruckdetails = new CyberTruckDetails();
+            cybertruckdetails.ShowDialog();
+        }
     }
 }

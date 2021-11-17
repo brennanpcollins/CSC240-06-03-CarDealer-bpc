@@ -33,6 +33,7 @@ namespace CSC240_06_03_CarDealer_bpc
             this.UxCorvetteTitlelabel = new System.Windows.Forms.Label();
             this.UxCorvettePicture = new System.Windows.Forms.PictureBox();
             this.UxCorvetteDetailLabel = new System.Windows.Forms.Label();
+            this.UxCorvetteInfoButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.UxCorvettePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,9 +51,9 @@ namespace CSC240_06_03_CarDealer_bpc
             // UxCorvettePicture
             // 
             this.UxCorvettePicture.Image = ((System.Drawing.Image)(resources.GetObject("UxCorvettePicture.Image")));
-            this.UxCorvettePicture.Location = new System.Drawing.Point(53, 388);
+            this.UxCorvettePicture.Location = new System.Drawing.Point(-2, 652);
             this.UxCorvettePicture.Name = "UxCorvettePicture";
-            this.UxCorvettePicture.Size = new System.Drawing.Size(542, 384);
+            this.UxCorvettePicture.Size = new System.Drawing.Size(647, 409);
             this.UxCorvettePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UxCorvettePicture.TabIndex = 1;
             this.UxCorvettePicture.TabStop = false;
@@ -61,26 +62,38 @@ namespace CSC240_06_03_CarDealer_bpc
             // 
             this.UxCorvetteDetailLabel.AutoSize = true;
             this.UxCorvetteDetailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.UxCorvetteDetailLabel.Font = new System.Drawing.Font("Harlow Solid Italic", 19.875F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.UxCorvetteDetailLabel.Font = new System.Drawing.Font("Harlow Solid Italic", 28.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.UxCorvetteDetailLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.UxCorvetteDetailLabel.Location = new System.Drawing.Point(601, 313);
+            this.UxCorvetteDetailLabel.Location = new System.Drawing.Point(465, 550);
             this.UxCorvetteDetailLabel.Name = "UxCorvetteDetailLabel";
-            this.UxCorvetteDetailLabel.Size = new System.Drawing.Size(699, 402);
+            this.UxCorvetteDetailLabel.Size = new System.Drawing.Size(492, 95);
             this.UxCorvetteDetailLabel.TabIndex = 2;
-            this.UxCorvetteDetailLabel.Text = "Price: $59,900\r\n\r\nThis model has been a loved \r\nimplementation of Chevrolet \r\naut" +
-    "omation for a long time.\r\nCome pick this beauty up today!";
+            this.UxCorvetteDetailLabel.Text = "Price: $59,900";
+            // 
+            // UxCorvetteInfoButton
+            // 
+            this.UxCorvetteInfoButton.BackColor = System.Drawing.Color.White;
+            this.UxCorvetteInfoButton.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.UxCorvetteInfoButton.Location = new System.Drawing.Point(-2, 648);
+            this.UxCorvetteInfoButton.Name = "UxCorvetteInfoButton";
+            this.UxCorvetteInfoButton.Size = new System.Drawing.Size(647, 113);
+            this.UxCorvetteInfoButton.TabIndex = 3;
+            this.UxCorvetteInfoButton.Text = "Click here for info.";
+            this.UxCorvetteInfoButton.UseVisualStyleBackColor = false;
+            this.UxCorvetteInfoButton.Click += new System.EventHandler(this.UxCorvetteInfoButton_Click);
             // 
             // Corvette
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1302, 868);
+            this.ClientSize = new System.Drawing.Size(1420, 1057);
+            this.Controls.Add(this.UxCorvetteInfoButton);
             this.Controls.Add(this.UxCorvetteDetailLabel);
             this.Controls.Add(this.UxCorvettePicture);
             this.Controls.Add(this.UxCorvetteTitlelabel);
             this.Name = "Corvette";
-            this.Text = "Corvette";
+            this.Text = "2021 Chevrolet Corvette";
             ((System.ComponentModel.ISupportInitialize)(this.UxCorvettePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -92,5 +105,6 @@ namespace CSC240_06_03_CarDealer_bpc
         private System.Windows.Forms.Label UxCorvetteTitlelabel;
         private System.Windows.Forms.PictureBox UxCorvettePicture;
         private System.Windows.Forms.Label UxCorvetteDetailLabel;
+        private System.Windows.Forms.Button UxCorvetteInfoButton;
     }
 }
